@@ -1,8 +1,7 @@
 /* DEBUG */
-.header_debug{
+/* .header_debug{
     background-color: blue;
-    height: 100px;
-}
+} */
 
 .app_content_debug{
     background-color: cadetblue;
@@ -23,7 +22,18 @@
     background-color: aqua;
 }
 /* ------------------------------------- */
+
+/* RESET */
+img{
+    max-width: 100%;
+}
+
+.container-fluid{
+    padding: 0;
+}
+
 /* LAYOUT */
+
 
  #app{
   height: 100vh;
@@ -33,12 +43,87 @@ aside{
     width: 70px;
 }
 
+/* HEADER */
+.logo_header_lg{
+    display: none;
+}
+
+.logo{
+    width: 45px;
+    aspect-ratio: 1;
+    display: block;
+}
+
+.header_bar :first-child{
+    flex-shrink: 0;
+} 
+
+header .form-control{
+    line-height: 40px;
+    background-color: #E5E5E5;
+    border: none;
+    font-size: 14px;
+}
+
+header{
+    padding: 14px 0;
+    background-color: #F8F9FA;
+}
+
+.header_bar{
+    background-color: white;
+   list-style: none;
+   display: flex;
+   margin: 0;
+   padding: 0;
+   justify-content: space-between;
+   gap: 24px;
+   align-items: center;
+}
+
+.sheader_nav :last-child{
+    display: none;
+}
+
+.header_nav{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.header_nav li:nth-child(-n+3) {
+    display: none;
+}
+
+.header_nav li:last-of-type{
+    color: #FF8F00;
+}
 
 
-/* MEDIA QUERYs */
+    /* MEDIA QUERYs */
 
 @media (min-width: 768px){
   aside{
     min-width: 150px;
   }
+
+.logo_header_lg{
+    display: block;
+}
+
+.header_nav li {
+    display: flex !important;
+}
+
+.logo{
+    display: none !important;
+}
+
+
+
 }
