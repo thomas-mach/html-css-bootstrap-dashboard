@@ -1,0 +1,44 @@
+/* DEBUG */
+.header_debug{
+    background-color: blue;
+    height: 100px;
+}
+
+.app_content_debug{
+    background-color: cadetblue;
+    height: 800px;
+}
+
+.main_debug{
+    background-color: chartreuse;
+    height: 800px;
+}
+
+.aside_debug{
+    background-color: chocolate;
+    height: 800px;
+}
+
+.app_body{
+    background-color: aqua;
+}
+/* ------------------------------------- */
+/* LAYOUT */
+
+ #app{
+  height: 100vh;
+}
+
+aside{
+    width: 70px;
+}
+
+
+
+/* MEDIA QUERYs */
+
+@media (min-width: 768px){
+  aside{
+    min-width: 150px;
+  }
+}
