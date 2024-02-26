@@ -11,30 +11,40 @@
 <body>
     <div id="app">
         <!-- HEADER -->
-        <header>
-            <div class="container-fluid header_debug">
-                <ul class="header_bar">
-                    <li><img class="logo" src="img 4/mobile-logo.png" alt="logo_mobile"></li>
-                    <li class="logo_header_lg"><img  src="img 4/logo.svg" alt=""></li>
-                    <li class="flex-grow-1"><input class="form-control" type="text" name="" id="" placeholder="Prova a cercare: Lezioni di Laravel "></li>
-                    <li>
-                        <ul class="header_nav">
-                            <li><i class="fa-solid fa-list-ul"></i></li>
-                            <li><i class="fa-solid fa-question"></i></li>
-                            <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
-                            <li><i class="fa-solid fa-bell"></i></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </header>
+    
         <!-- END HEADER -->
 
-        
+
         <!-- APP CONTENT -->
-        <div class="container-fluid app-content_debug">
+        <div class="container-fluid d-flex flex-column">
+
+            <header>
+                <div class="container-fluid header_debug">
+                    <ul class="header_bar">
+                        <li><img class="logo" src="img/mobile-logo.png" alt="logo_mobile"></li>
+                        <li class="logo_header_lg"><img  src="img/logo.svg" alt=""></li>
+                        <li class="flex-grow-1"><input class="form-control" type="text" name="" id="" placeholder="Prova a cercare: Lezioni di Laravel "></li>
+                        <li>
+                            <ul class="header_nav">
+                                <li><i class="fa-solid fa-list-ul"></i></li>
+                                <li><i class="fa-solid fa-question"></i></li>
+                                <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
+                                <li><i class="fa-solid fa-bell"></i></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+
             <div class="app_body d-flex">
-                <aside class="aside_debug"></aside>
+                <aside>
+                    <ul class="aside_nav">
+                        <li><i class="fa-solid fa-house"></i><span>Home</span></li>
+                        <li><i class="fa-solid fa-chart-simple"></i><span>Stats</span></li>
+                        <li class="flex_grow"><i class="fa-solid fa-signal"></i><span>Signals</span></li>
+                        <li><i class="fa-solid fa-gear"></i><span>Admin</span></li>
+                    </ul>
+                </aside>
                 <main class="flex-grow-1 main_debug">
                     <div class="container">
                         <div class="row">
