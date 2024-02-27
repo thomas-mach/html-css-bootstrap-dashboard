@@ -15,11 +15,6 @@ li{
     height: 100vh;
   }
 
-.container-fluid{
-    background-color: black;
-    padding: 0;
-    height: 100%;
-}
 
 aside{
     width: 70px;
@@ -30,9 +25,6 @@ aside{
 }
 
 /* HEADER */
-.logo_header_lg{
-    display: none;
-}
 
 .logo{
     width: 45px;
@@ -76,10 +68,6 @@ header{
     padding-right: 10px;
 }
 
-.header_nav li:nth-child(-n+3) {
-    display: none;
-}
-
 .header_nav li:last-of-type{
     color: #FF8F00;
 }
@@ -94,10 +82,6 @@ aside{
     background-image: url(../img/sidebar-bg.png);
 }
 
-aside span{
-    display: none;
-}
-
 .aside_nav{
     padding: 30px 22px;
     height: 100%;
@@ -108,35 +92,56 @@ aside span{
     font-size: 20px;
 }
 
-.flex_grow{
-    flex-grow: 1;
+.aside_nav li:hover{
+    background-color: #7c8085;
 }
+
+/* MAIN */
+
+.castom_color{
+    background-color: #1B72E8;
+    color: white;
+}
+
+/* OFFCANVAS */
+
+.fullscreen{
+    position: fixed !important;
+    top: 0 !important;
+    right: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important ;
+    z-index: 1050 !important;
+    overflow-x: hidden !important ;
+    overflow-y: auto !important;
+    background-color: white !important;
+    transition: transform 0.3s ease-in-out !important;
+} 
+
+
 
 
     /* MEDIA QUERYs */
-
- @media (min-width: 768px){
+@media (min-width: 768px){
 aside{
     min-width: 150px;
   } 
 
-aside span{
-    display: inline-block;
-    padding-left: 10px;
-}
 
-.logo_header_lg{
-    display: block;
-}
 
-.header_nav li {
-    display: flex !important;
+.fullscreen{
+    position: fixed !important;
+    top: 0 !important;
+    right:0 !important;
+    width: 40vw !important;
+    height: 100vh !important ;
+    z-index: 1050 !important;
+    overflow-x: hidden !important ;
+    overflow-y: auto !important;
+    background-color: white !important;
+    transition: transform 0.3s ease-in-out !important;
 }
-
-.logo{
-    display: none !important;
-}
-
 
 
 }
+
