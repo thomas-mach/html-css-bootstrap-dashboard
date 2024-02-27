@@ -13,34 +13,53 @@ li{
 /* LAYOUT */
 #app{
     height: 100vh;
-  }
+}
 
 
 aside{
     width: 70px;
 }
 
-.app_body{
-    flex-grow: 1;
+/* BUTTONS */
+.btn-castom{
+    border-radius: 100px;
+    color: white;
+    background-color: #165BBA;
+    line-height: 24px;
+    font-size: 12px;
+    padding: 0 12px;
+}
+
+/* ICONS */
+.center_icon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%, -50%);
+    pointer-events: none;
+    font-size: 16px;
+    padding-left: 20px;
 }
 
 /* HEADER */
-
 .logo{
     width: 45px;
     aspect-ratio: 1;
     display: block;
 }
 
-.header_bar :first-child{
-    flex-shrink: 0;
-} 
 
 header .form-control{
     line-height: 40px;
     background-color: #E5E5E5;
     border: none;
-    font-size: 14px;
+    font-size: 16px;
+    padding-left: 50px;
+}
+
+.header_height{
+    height: 70px;
+    position: relative;
+   
 }
 
 header{
@@ -48,59 +67,24 @@ header{
     background-color: #F8F9FA;
 }
 
-.header_bar{
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    gap: 24px;
-    align-items: center;
-}
-
-.sheader_nav :last-child{
-    display: none;
-}
-
-.header_nav{
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    align-items: center;
-    padding-right: 10px;
-}
-
-.header_nav li:last-of-type{
-    color: #FF8F00;
-}
-
 /* ASIDE */
 .app_body{
-    background-color: #FF8F00;
-}
+     background-color: #F8F9FA;
+    }
 
 aside{
     background-color: #051E34;
     background-image: url(../img/sidebar-bg.png);
 }
 
-.aside_nav{
-    padding: 30px 22px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    color: white;
-    font-size: 20px;
-}
-
-.aside_nav li:hover{
+aside li:hover{
     background-color: #7c8085;
 }
 
 /* MAIN */
 
-.castom_color{
-    background-color: #1B72E8;
-    color: white;
+main{
+    height: calc(100vh - 70px);
 }
 
 /* OFFCANVAS */
@@ -118,16 +102,11 @@ aside{
     transition: transform 0.3s ease-in-out !important;
 } 
 
-
-
-
-    /* MEDIA QUERYs */
+/* MEDIA QUERYs */
 @media (min-width: 768px){
 aside{
     min-width: 150px;
   } 
-
-
 
 .fullscreen{
     position: fixed !important;
@@ -141,7 +120,5 @@ aside{
     background-color: white !important;
     transition: transform 0.3s ease-in-out !important;
 }
-
-
 }
 
